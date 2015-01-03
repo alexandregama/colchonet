@@ -9,5 +9,6 @@ class UsersController < ApplicationController
 			redirect_to @user, :notice => 'Welcome to Colchonet'
 		else
 			render :new
+		end
 	end
 end
