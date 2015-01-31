@@ -1,4 +1,4 @@
-<h1>Cadastro<h1>
+<h1>Cadastro</h1>
 
 <%= form_for @user do |f| %>
 	<p>
@@ -6,16 +6,12 @@
 		<%= f.text_field :full_name %>
 	</p>
 	<p>
-		<%= f.label :email %> <br/>
-		<%= f.text_field :email%>
-	</p>
-	<p>
-		<%= f.label :location %>
+		<%= f.label :location %> <br/>
 		<%= f.text_field :location %>
 	</p>
 	<p>
-		<%= f.label :bio %>
-		<%= f.text_area :bio %>
+		<%= f.label :email %> <br/>
+		<%= f.text_field :email %>
 	</p>
 	<p>
 		<%= f.label :password %>
@@ -24,6 +20,10 @@
 	<p>
 		<%= f.label :password_confirmation %>
 		<%= f.password_field :password_confirmation %>
+	</p>
+	<p>
+		<%= f.label :bio %>
+		<%= f.text_area :bio %>
 	</p>
 	<p>
 		<%= f.submit %>

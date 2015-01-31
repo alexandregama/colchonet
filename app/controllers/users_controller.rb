@@ -4,7 +4,7 @@ class UsersController < ApplicationController
 	end
 
 	def create
-		@user = User.new(params[:user]) # mass-assignment
+		@user = User.new params[:user] # mass-assignment
 		if @user.save
 			redirect_to @user, :notice => 'Welcome to Colchonet'
 		else
