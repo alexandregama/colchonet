@@ -2,6 +2,7 @@ Colchonet::Application.routes.draw do
   resources :rooms # will be mapped to RoomsController
   resources :users # will be mapped to UsersController
 
+  root to: 'rooms#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
